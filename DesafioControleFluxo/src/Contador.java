@@ -1,4 +1,4 @@
-mport java.util.Scanner;
+import java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) {
@@ -16,11 +16,11 @@ public class Contador {
         }
     }
                 static void contar(int primeiro, int segundo) throws ParametrosInvalidosException{
-                    if (primeiro <= segundo) {
+                    if (primeiro >= segundo) {
                             throw new ParametrosInvalidosException();
                     }
                     else {
-                        int contagem = primeiro - segundo;
+                        int contagem = segundo - primeiro;
                         for (int i = 1; i <= contagem; i++) {
 
                             System.out.println("imprimindo o numero " + i);
